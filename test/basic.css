@@ -1,5 +1,6 @@
 @custom-media --mq-a (max-width: 30em), (max-height: 30em);
 @custom-media --not-mq-a not all and (--mq-a);
+@custom-media --mq-b screen and (max-width: 30em);
 
 @media (--mq-a) {
 	body {
@@ -28,6 +29,12 @@
 @media not all and (--not-mq-a) {
 	body {
 		order: 2;
+	}
+}
+
+@media (--mq-b) {
+	body {
+		order: 1;
 	}
 }
 

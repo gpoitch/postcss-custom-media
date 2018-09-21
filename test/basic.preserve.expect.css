@@ -61,6 +61,18 @@
 	}
 }
 
+@media screen and (max-width: 30em) {
+	body {
+		order: 1;
+	}
+}
+
+@media (--mq-b) {
+	body {
+		order: 1;
+	}
+}
+
 @custom-media --circular-mq-a (--circular-mq-b);
 @custom-media --circular-mq-b (--circular-mq-a);
 
